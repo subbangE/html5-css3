@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>비디오 재생하기</title>
+		<style>
+			body {
+				margin-top:20px;
+				margin-left:50px;
+			}
+		</style>
+</head>
+<body>
+	<!-- width <- 크기조정 -->
+	<video width="300" controls>
+		<source src="media/Painting.mp4" type="video/mp4">
+		<source src="media/Painting.webm" type="video/webm">
+		<!-- track,.vtt 자막 설정 (싱크가 맞는걸 사용해야함) -->
+		<track src="media/Painting.vtt" srclang="ko" label="Korean" default>
+	</video>
+</body>
+</html>

@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <title>Transform</title>
+    <style>
+      .tr1 {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        border: 1px solid black;
+
+        /* transition-property: all;
+				transition-duration: 2s */
+        transition: /* (all) */ 2s ease-in; /* transition: (모두) 2초 시작에 천천히 */
+      }
+      .tr1:hover {
+        width: 100px;
+        height: 100px;
+        background-color: #ff6e5f;
+        transform: rotate(270deg);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="tr1"></div>
+  </body>
+</html>

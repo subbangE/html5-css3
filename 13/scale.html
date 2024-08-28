@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <title>Transform</title>
+    <style>
+      .origin {
+        overflow: hidden; /* origin 크기에서 벗어나는 구간은 나오지 않게 함 */
+        width: 210px;
+        height: 200px;
+        border: 1px solid black;
+        float: left;
+        margin: 40px;
+      }
+      .scalex:hover {
+        /* scaleX는 가로로 확대축소 */
+        transform: scaleX(1.2);
+      }
+      .scaley:hover {
+        /* scaleY는 세로로 확대축소 */
+        transform: scaleY(1.5);
+      }
+      .scale:hover {
+        /* scale은  */
+        transform: scale(0.7);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="origin">
+      <div class="scalex">
+        <img src="images/fruit.jpg" />
+      </div>
+    </div>
+    <div class="origin">
+      <div class="scaley">
+        <img src="images/fruit.jpg" />
+      </div>
+    </div>
+    <div class="origin">
+      <div class="scale">
+        <img src="images/fruit.jpg" />
+      </div>
+    </div>
+  </body>
+</html>

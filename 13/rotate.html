@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <title>Transform</title>
+    <style>
+      .origin {
+        width: 210px;
+        height: 200px;
+        border: 1px solid black;
+        float: left;
+        margin: 40px;
+      }
+      .rotate1:hover {
+        /* rotate는 각도만큼 회전 */
+        transform: rotate(360deg);
+      }
+      .rotate2:hover {
+        transform: rotate(-40deg);
+      }
+      .tr {
+        transition: all 1s ease-in;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="origin">
+      <div class="rotate1 tr">
+        <img src="images/fruit.jpg" />
+      </div>
+    </div>
+    <div class="origin">
+      <div class="rotate2 tr">
+        <img src="images/fruit.jpg" />
+      </div>
+    </div>
+  </body>
+</html>
